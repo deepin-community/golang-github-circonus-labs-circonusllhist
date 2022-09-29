@@ -1,0 +1,23 @@
+Source: golang-github-circonus-labs-circonusllhist
+Section: golang
+Priority: optional
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+Standards-Version: 4.5.1
+Homepage: https://github.com/circonus-labs/circonusllhist
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-circonus-labs-circonusllhist
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-circonus-labs-circonusllhist.git
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-go
+XS-Go-Import-Path: github.com/circonus-labs/circonusllhist
+
+Package: golang-github-circonus-labs-circonusllhist-dev
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Multi-Arch: foreign
+Description: implementation of Circonus log-linear histograms
+ A Golang implementation of Circonus log-linear histograms.
